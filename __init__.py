@@ -1,4 +1,3 @@
-
 bl_info = {
     "name": "BlenderSFM",
     "author": "Apoorva Joshi",
@@ -25,7 +24,6 @@ import sys
 
 def add_mesh_point_cloud(self, context):
     self.layout.operator(PointCloud.add_mesh_point_cloud.bl_idname, text="Point Cloud", icon="GROUP_VERTEX")
-
 
 def register():
     bpy.utils.register_module(__name__)
