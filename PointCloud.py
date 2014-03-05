@@ -12,7 +12,7 @@ import imp
 imp.reload(osmbundler)
 imp.reload(osmcmvs)
 
-#------------------------------------------------------------
+#----------------------------------------------------------
 
 class add_mesh_point_cloud(bpy.types.Operator):
     """"""
