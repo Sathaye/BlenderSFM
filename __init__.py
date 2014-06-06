@@ -19,23 +19,20 @@ else:
 import bpy
 import sys
 
+<<<<<<< HEAD
 ################################################################################
 ##### REGISTER #####
 
 def add_mesh_point_cloud(self, context):
     self.layout.operator(PointCloud.add_mesh_point_cloud.bl_idname, text="Point Cloud", icon="GROUP_VERTEX")
+=======
+>>>>>>> d1dae371d33b701dec2536e57df92c4597f7ea16
 
 def register():
     bpy.utils.register_module(__name__)
 
-    bpy.types.INFO_MT_mesh_add.append(add_mesh_point_cloud)
-    #bpy.types.VIEW3D_PT_tools_objectmode.prepend(add_mesh_point_cloud) #just for testing
-
 def unregister():
     bpy.utils.unregister_module(__name__)
-
-    bpy.types.INFO_MT_mesh_add.remove(add_mesh_point_cloud)
-    #bpy.types.VIEW3D_PT_tools_objectmode.remove(add_mesh_point_cloud) #just for testing
     
 if __name__ == "__main__":
     register()
